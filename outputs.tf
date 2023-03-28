@@ -2,11 +2,11 @@ output "private_links" {
   value = local.private_links[var.arm_environment]
 }
 
-output "storage_endpoint_suffix" {
+output "storage_suffix" {
   value = local.suffixes[var.arm_environment].storage_endpoint_suffix
 }
 
-output "acr_server_suffix" {
+output "acr_suffix" {
   value = local.suffixes[var.arm_environment].acr_server_suffix
 }
 
