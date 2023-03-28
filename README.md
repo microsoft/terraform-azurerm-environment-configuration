@@ -15,14 +15,15 @@ module "azurerm_environment_configuration" {
 
 arm_environment - stands for [terraform environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#environment). Supported values are: `public` and `usgovernment`.
 
-Use the module to get the privatelink, for example:
+To get privatelink, use as in following example:
 
 ```
 module.azurerm_environment_configuration.private_links["privatelink.monitor.azure.com"]
 ```
 
-for suffixes:
+To get suffix for a service, use as in following example:
 
+```
 module.azurerm_environment_configuration.suffixes["azurewebsites.net"]
 ```
 
