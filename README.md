@@ -1,14 +1,32 @@
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+This repository contains terraform environment configuration for privatelinks and services endpoint suffixes.
 
-As the maintainer of this project, please make a few updates:
+## Getting started
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+To use this project in your terraform scripts, source the module as follows:
+
+```
+module "azurerm_environment_configuration" {
+  source          = "github.com/microsoft/terraform-azurerm-environment-configuration"
+  arm_environment = <arm_environment>
+}
+```
+
+arm_environment - stands for [terraform environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#environment). Supported values are: `public` and `usgovernment`.
+
+Use the module to get the privatelink, for example:
+
+```
+module.azurerm_environment_configuration.private_links["privatelink.monitor.azure.com"]
+```
+
+for suffixes:
+
+module.azurerm_environment_configuration.suffixes["azurewebsites.net"]
+```
+
+Note: provide the public private link as an input. Based on the environment the module will return the privatelink in your environment. 
 
 ## Contributing
 
