@@ -5,3 +5,7 @@ output "private_links" {
 output "suffixes" {
   value = local.suffixes[var.arm_environment]
 }
+
+output "endpoints" {
+  value = local.endpoints[var.arm_environment]
+}
