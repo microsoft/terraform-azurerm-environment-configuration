@@ -70,13 +70,27 @@ locals {
   }
   suffixes = {
     usgovernment = {
-      "azurewebsites.net"     = "azurewebsites.us",
-      "file.core.windows.net" = "file.core.usgovcloudapi.net"
+      web_app                   = "azurewebsites.us",
+      acr_login_server_endpoint = "azurecr.us",
+      storage_endpoint          = "core.usgovcloudapi.net"
     }
     public = {
-      "azurewebsites.net"     = "azurewebsites.net",
-      "file.core.windows.net" = "file.core.windows.net"
+      web_app                   = "azurewebsites.net",
+      acr_login_server_endpoint = "azurecr.io",
+      storage_endpoint          = "core.windows.net"
     }
   }
-}
+  endpoints = {
+    usgovernment = {
+      active_directory = "https://login.microsoftonline.us",
+      microsoft_graph  = "https://graph.microsoft.us",
+      resource_manager = "https://management.usgovcloudapi.net"
+    }
+    public = {
+      active_directory = "https://login.microsoftonline.com",
+      microsoft_graph  = "https://graph.microsoft.com",
+      resource_manager = "https://management.azure.com"
+    }
+  }
 
+}
