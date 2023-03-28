@@ -13,7 +13,7 @@ module "azurerm_environment_configuration" {
 }
 ```
 
-arm_environment - stands for [terraform environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#environment). Supported values are: `public` and `usgovernment`.
+`arm_environment` - stands for [terraform environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#environment). Supported values are: `public` and `usgovernment`.
 
 To get privatelink, use as in following example:
 
