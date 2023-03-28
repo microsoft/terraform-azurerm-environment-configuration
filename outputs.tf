@@ -3,25 +3,25 @@ output "private_links" {
 }
 
 output "storage_endpoint_suffix" {
-  value = local.storage_endpoint_suffix[var.arm_environment]
+  value = local.suffixes[var.arm_environment].storage_endpoint_suffix
 }
 
 output "acr_server_suffix" {
-  value = local.acr_server_suffix[var.arm_environment]
+  value = local.suffixes[var.arm_environment].acr_server_suffix
 }
 
 output "web_app_suffix" {
-  value = local.web_app_suffix[var.arm_environment]
+  value = local.suffixes[var.arm_environment].web_app_suffix
 }
 
 output "active_directory_endpoint" {
-  value = local.active_directory_endpoint[var.arm_environment]
+  value = local.endpoints[var.arm_environment].active_directory_endpoint
 }
 
 output "microsoft_graph_endpoint" {
-  value = local.microsoft_graph_endpoint[var.arm_environment]
+  value = local.endpoints[var.arm_environment].microsoft_graph_endpoint
 }
 
 output "resource_manager_endpoint" {
-  value = local.resource_manager_endpoint[var.arm_environment]
+  value = local.endpoints[var.arm_environment].resource_manager_endpoint
 }
