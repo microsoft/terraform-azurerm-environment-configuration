@@ -68,29 +68,33 @@ locals {
 
     }
   }
-  suffixes = {
-    usgovernment = {
-      web_app                   = "azurewebsites.us",
-      acr_login_server_endpoint = "azurecr.us",
-      storage_endpoint          = "core.usgovcloudapi.net"
-    }
-    public = {
-      web_app                   = "azurewebsites.net",
-      acr_login_server_endpoint = "azurecr.io",
-      storage_endpoint          = "core.windows.net"
-    }
+
+  storage_endpoint_suffix = {
+    usgovernment = "core.usgovcloudapi.net",
+    public       = "core.windows.net"
   }
-  endpoints = {
-    usgovernment = {
-      active_directory = "https://login.microsoftonline.us",
-      microsoft_graph  = "https://graph.microsoft.us",
-      resource_manager = "https://management.usgovcloudapi.net"
-    }
-    public = {
-      active_directory = "https://login.microsoftonline.com",
-      microsoft_graph  = "https://graph.microsoft.com",
-      resource_manager = "https://management.azure.com"
-    }
+  acr_server_suffix = {
+    usgovernment = "azurecr.us",
+    public       = "azurecr.io"
+  }
+
+  web_app_suffix = {
+    usgovernment = "azurewebsites.us",
+    public       = "azurewebsites.net"
+  }
+  active_directory_endpoint = {
+    usgovernment = "https://login.microsoftonline.us",
+    public       = "https://login.microsoftonline.com"
+  }
+
+  microsoft_graph_endpoint = {
+    usgovernment = "https://graph.microsoft.us",
+    public       = "https://graph.microsoft.com"
+  }
+
+  resource_manager_endpoint = {
+    usgovernment = "https://management.usgovcloudapi.net",
+    public       = "https://management.azure.com"
   }
 
 }
