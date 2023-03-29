@@ -15,18 +15,14 @@ name: Lint Code Base
 # Start the job on all push #
 #############################
 on:  # yamllint disable-line rule:truthy
-  push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
-  
   pull_request:
     branches: [master, main]
   
-  # for each ref (branch/pr) run just the most recent,
-  # cancel other pending/running ones
-  concurrency:
-    group: "${{ github.workflow }}-${{ github.head_ref }}"
-    cancel-in-progress: true
+# for each ref (branch/pr) run just the most recent,
+# cancel other pending/running ones
+concurrency:
+  group: "${{ github.workflow }}-${{ github.head_ref }}"
+  cancel-in-progress: true
 
 ###############
 # Set the Job #
