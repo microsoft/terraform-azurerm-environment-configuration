@@ -70,14 +70,14 @@ locals {
   }
   suffixes = {
     usgovernment = {
-      web_app                   = "azurewebsites.us",
-      acr_login_server_endpoint = "azurecr.us",
-      storage_endpoint          = "core.usgovcloudapi.net"
+      web_app = "azurewebsites.us",
+      acr     = "azurecr.us",
+      storage = "core.usgovcloudapi.net"
     }
     public = {
-      web_app                   = "azurewebsites.net",
-      acr_login_server_endpoint = "azurecr.io",
-      storage_endpoint          = "core.windows.net"
+      web_app = "azurewebsites.net",
+      acr     = "azurecr.io",
+      storage = "core.windows.net"
     }
   }
   endpoints = {
