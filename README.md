@@ -79,9 +79,9 @@ module.azurerm_environment_configuration.active_directory_endpoint
 ```
 
 The following endpoints are available:
-active_directory_endpoint - public cloud example: `https://login.microsoftonline.com`
-microsoft_graph_endpoint - public cloud example: `https://graph.microsoft.com`
-resource_manager_endpoint - public cloud example: `https://management.azure.com`
+- active_directory_endpoint - public cloud example: `https://login.microsoftonline.com`
+- microsoft_graph_endpoint - public cloud example: `https://graph.microsoft.com`
+- resource_manager_endpoint - public cloud example: `https://management.azure.com`
 
 ## Contributing
 
