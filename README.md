@@ -15,19 +15,73 @@ module "azurerm_environment_configuration" {
 
 `arm_environment` - stands for [terraform environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#environment). Supported values are: `public` and `usgovernment`.
 
+### Privatelink
 To get privatelink, use as in following example:
 
 ```
 module.azurerm_environment_configuration.private_links["privatelink.monitor.azure.com"]
 ```
 
+Note: provide the public private link as an input. Based on the environment the module will return the privatelink in your environment.
+
+Following links are available:
+
+`privatelink.azurewebsites.net`
+`privatelink.queue.core.windows.net`
+`privatelink.table.core.windows.net`
+`privatelink.monitor.azure.com`
+`privatelink.oms.opinsights.azure.com`
+`privatelink.ods.opinsights.azure.com`
+`privatelink.agentsvc.azure-automation.net`
+`privatelink.blob.core.windows.net`
+`privatelink.web.core.windows.net`
+`privatelink.file.core.windows.net`
+`privatelink.vaultcore.azure.net`
+`privatelink.azurecr.io`
+`privatelink.eventgrid.azure.net`
+`privatelink.mongo.cosmos.azure.com`
+`privatelink.mysql.database.azure.com`
+`privatelink.documents.azure.com`
+`privatelink.servicebus.windows.net`
+`privatelink.purview.azure.com`
+`privatelink.purviewstudio.azure.com`
+`privatelink.sql.azuresynapse.net`
+`privatelink.dev.azuresynapse.net`
+`privatelink.azuresynapse.net`
+`privatelink.dfs.core.windows.net`
+`privatelink.azurehealthcareapis.com`
+`privatelink.dicom.azurehealthcareapis.com`
+`privatelink.api.azureml.ms`
+`privatelink.cert.api.azureml.ms`
+`privatelink.notebooks.azure.net`
+`privatelink.postgres.database.azure.com`
+`privatelink.azuredatabricks.net`
+
+### Service Suffix
+
 To get suffix for a service, use as in following example:
 
 ```
-module.azurerm_environment_configuration.suffixes["azurewebsites.net"]
+module.azurerm_environment_configuration.storage_suffix
 ```
 
-Note: provide the public private link as an input. Based on the environment the module will return the privatelink in your environment. 
+The following suffixes are available:
+- storage_suffix - public cloud example: `core.windows.net`
+- acr_suffix - public cloud example: `azurecr.io`
+- web_app_suffix - public cloud example: `azurewebsites.net`
+
+### Endpoints
+
+To get an Azure Endpoint, use as in following example:
+
+```
+module.azurerm_environment_configuration.active_directory_endpoint
+```
+
+The following endpoints are available:
+active_directory_endpoint - public cloud example: `https://login.microsoftonline.com`
+microsoft_graph_endpoint - public cloud example: `https://graph.microsoft.com`
+resource_manager_endpoint - public cloud example: `https://management.azure.com`
 
 ## Contributing
 
