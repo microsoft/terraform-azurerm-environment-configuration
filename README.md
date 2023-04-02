@@ -26,36 +26,36 @@ Note: provide the public private link as an input. Based on the environment the 
 
 Following links are available:
 
-`privatelink.azurewebsites.net`
-`privatelink.queue.core.windows.net`
-`privatelink.table.core.windows.net`
-`privatelink.monitor.azure.com`
-`privatelink.oms.opinsights.azure.com`
-`privatelink.ods.opinsights.azure.com`
-`privatelink.agentsvc.azure-automation.net`
-`privatelink.blob.core.windows.net`
-`privatelink.web.core.windows.net`
-`privatelink.file.core.windows.net`
-`privatelink.vaultcore.azure.net`
-`privatelink.azurecr.io`
-`privatelink.eventgrid.azure.net`
-`privatelink.mongo.cosmos.azure.com`
-`privatelink.mysql.database.azure.com`
-`privatelink.documents.azure.com`
-`privatelink.servicebus.windows.net`
-`privatelink.purview.azure.com`
-`privatelink.purviewstudio.azure.com`
-`privatelink.sql.azuresynapse.net`
-`privatelink.dev.azuresynapse.net`
-`privatelink.azuresynapse.net`
-`privatelink.dfs.core.windows.net`
-`privatelink.azurehealthcareapis.com`
-`privatelink.dicom.azurehealthcareapis.com`
-`privatelink.api.azureml.ms`
-`privatelink.cert.api.azureml.ms`
-`privatelink.notebooks.azure.net`
-`privatelink.postgres.database.azure.com`
-`privatelink.azuredatabricks.net`
+- `privatelink.azurewebsites.net`
+- `privatelink.queue.core.windows.net`
+- `privatelink.table.core.windows.net`
+- `privatelink.monitor.azure.com`
+- `privatelink.oms.opinsights.azure.com`
+- `privatelink.ods.opinsights.azure.com`
+- `privatelink.agentsvc.azure-automation.net`
+- `privatelink.blob.core.windows.net`
+- `privatelink.web.core.windows.net`
+- `privatelink.file.core.windows.net`
+- `privatelink.vaultcore.azure.net`
+- `privatelink.azurecr.io`
+- `privatelink.eventgrid.azure.net`
+- `privatelink.mongo.cosmos.azure.com`
+- `privatelink.mysql.database.azure.com`
+- `privatelink.documents.azure.com`
+- `privatelink.servicebus.windows.net`
+- `privatelink.purview.azure.com`
+- `privatelink.purviewstudio.azure.com`
+- `privatelink.sql.azuresynapse.net`
+- `privatelink.dev.azuresynapse.net`
+- `privatelink.azuresynapse.net`
+- `privatelink.dfs.core.windows.net`
+- `privatelink.azurehealthcareapis.com`
+- `privatelink.dicom.azurehealthcareapis.com`
+- `privatelink.api.azureml.ms`
+- `privatelink.cert.api.azureml.ms`
+- `privatelink.notebooks.azure.net`
+- `privatelink.postgres.database.azure.com`
+- `privatelink.azuredatabricks.net`
 
 ### Service Suffix
 
