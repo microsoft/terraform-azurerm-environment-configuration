@@ -61,7 +61,7 @@ Following links are available:
 
 To get suffix for a service, use as in following example:
 
-```
+```terraform
 module.azurerm_environment_configuration.storage_suffix
 ```
 
