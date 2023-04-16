@@ -25,3 +25,7 @@ output "microsoft_graph_endpoint" {
 output "resource_manager_endpoint" {
   value = local.endpoints[var.arm_environment].resource_manager
 }
+
+output "aml_studio_endpoint" {
+  value = local.endpoints[var.arm_environment].aml_studio
+}
