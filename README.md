@@ -56,6 +56,7 @@ Following links are available:
 - `privatelink.notebooks.azure.net`
 - `privatelink.postgres.database.azure.com`
 - `privatelink.azuredatabricks.net`
+- `privatelink.batch.azure.com`
 
 ### Service Suffix
 
