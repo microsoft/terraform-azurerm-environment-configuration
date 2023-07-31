@@ -66,7 +66,7 @@ locals {
       "privatelink.notebooks.azure.net"           = "privatelink.notebooks.azure.net",
       "privatelink.postgres.database.azure.com"   = "privatelink.postgres.database.azure.com",
       "privatelink.azuredatabricks.net"           = "privatelink.azuredatabricks.net"
-      "privatelink.batch.azure.com"               = "privatelink.batch.usgovcloudapi.net"
+      "privatelink.batch.azure.com"               = "privatelink.batch.azure.com"
 
     }
   }
