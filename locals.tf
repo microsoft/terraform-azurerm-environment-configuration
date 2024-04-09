@@ -30,7 +30,6 @@ locals {
       "privatelink.cert.api.azureml.ms"           = "privatelink.cert.api.ml.azure.us",
       "privatelink.notebooks.azure.net"           = "privatelink.notebooks.usgovcloudapi.net",
       "privatelink.postgres.database.azure.com"   = "privatelink.postgres.database.usgovcloudapi.net",
-      "privatelink.mysql.database.azure.com"      = "privatelink.mysql.database.azure.com",
       "privatelink.azuredatabricks.net"           = "privatelink.databricks.azure.us"
       "privatelink.batch.azure.com"               = "privatelink.batch.usgovcloudapi.net"
 
