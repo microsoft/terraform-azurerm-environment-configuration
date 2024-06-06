@@ -30,8 +30,9 @@ locals {
       "privatelink.cert.api.azureml.ms"           = "privatelink.cert.api.ml.azure.us",
       "privatelink.notebooks.azure.net"           = "privatelink.notebooks.usgovcloudapi.net",
       "privatelink.postgres.database.azure.com"   = "privatelink.postgres.database.usgovcloudapi.net",
-      "privatelink.azuredatabricks.net"           = "privatelink.databricks.azure.us"
-      "privatelink.batch.azure.com"               = "privatelink.batch.usgovcloudapi.net"
+      "privatelink.azuredatabricks.net"           = "privatelink.databricks.azure.us",
+      "privatelink.batch.azure.com"               = "privatelink.batch.usgovcloudapi.net",
+      "privatelink.database.windows.net"          = "privatelink.database.usgovcloudapi.net"
 
     }
     public = {
@@ -64,8 +65,9 @@ locals {
       "privatelink.cert.api.azureml.ms"           = "privatelink.cert.api.azureml.ms",
       "privatelink.notebooks.azure.net"           = "privatelink.notebooks.azure.net",
       "privatelink.postgres.database.azure.com"   = "privatelink.postgres.database.azure.com",
-      "privatelink.azuredatabricks.net"           = "privatelink.azuredatabricks.net"
-      "privatelink.batch.azure.com"               = "privatelink.batch.azure.com"
+      "privatelink.azuredatabricks.net"           = "privatelink.azuredatabricks.net",
+      "privatelink.batch.azure.com"               = "privatelink.batch.azure.com",
+      "privatelink.database.windows.net"          = "privatelink.database.windows.net"
 
     }
   }
