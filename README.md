@@ -58,6 +58,8 @@ Following links are available:
 - `privatelink.azuredatabricks.net`
 - `privatelink.batch.azure.com`
 - `privatelink.database.windows.net`
+- `privatelink.openai.azure.com`
+- `privatelink.cognitiveservices.azure.com`
 
 ### Service Suffix
 

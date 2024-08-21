@@ -33,6 +33,8 @@ locals {
       "privatelink.azuredatabricks.net"           = "privatelink.databricks.azure.us",
       "privatelink.batch.azure.com"               = "privatelink.batch.usgovcloudapi.net",
       "privatelink.database.windows.net"          = "privatelink.database.usgovcloudapi.net"
+      "privatelink.openai.azure.com"              = "privatelink.openai.azure.us",
+      "privatelink.cognitiveservices.azure.com"   = "privatelink.cognitiveservices.azure.us"
 
     }
     public = {
@@ -68,7 +70,8 @@ locals {
       "privatelink.azuredatabricks.net"           = "privatelink.azuredatabricks.net",
       "privatelink.batch.azure.com"               = "privatelink.batch.azure.com",
       "privatelink.database.windows.net"          = "privatelink.database.windows.net"
-
+      "privatelink.openai.azure.com"              = "privatelink.openai.azure.com",
+      "privatelink.cognitiveservices.azure.com"   = "privatelink.cognitiveservices.azure.com"
     }
   }
   suffixes = {
