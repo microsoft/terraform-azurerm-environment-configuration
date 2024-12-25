@@ -108,7 +108,8 @@ contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additio
 
 ### Reference for Private Link Configurations
 
-For detailed DNS mappings and configurations of private endpoints across environments (Public, US Government, China, Germany), refer to the official [Azure Private Link Documentation](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns). 
+For detailed DNS mappings and configurations of private endpoints across environments (Public, US Government, China, Germany),
+refer to the official [Azure Private Link Documentation](https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-dns).
 
 The documentation includes:
 - Private DNS zone configurations
