@@ -60,9 +60,9 @@ Following links are available:
 - `privatelink.database.windows.net`
 - `privatelink.openai.azure.com`
 - `privatelink.cognitiveservices.azure.com`
-- `privatelink.pbidedicated.windows.net`
-- `privatelink.analysis.windows.net`
-- `privatelink.prod.powerquery.microsoft.com`
+- `privatelink.pbidedicated.windows.net` This link is supported only in public regions.
+- `privatelink.analysis.windows.net` This link is supported only in public regions.
+- `privatelink.prod.powerquery.microsoft.com` This link is supported only in public regions.
 
 
 ### Service Suffix
