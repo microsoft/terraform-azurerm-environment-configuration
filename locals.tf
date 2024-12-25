@@ -1,6 +1,9 @@
 locals {
   private_links = {
     usgovernment = {
+      "privatelink.pbidedicated.windows.net"      = "privatelink.pbidedicated.windows.us",
+      "privatelink.analysis.windows.net"          = "privatelink.analysis.windows.us",
+      "privatelink.prod.powerquery.microsoft.com" = "privatelink.prod.powerquery.microsoft.us",
       "privatelink.azurewebsites.net"             = "privatelink.azurewebsites.us",
       "privatelink.queue.core.windows.net"        = "privatelink.queue.core.usgovcloudapi.net",
       "privatelink.table.core.windows.net"        = "privatelink.table.core.usgovcloudapi.net",
@@ -38,6 +41,9 @@ locals {
 
     }
     public = {
+      "privatelink.pbidedicated.windows.net"      = "privatelink.pbidedicated.windows.net",
+      "privatelink.analysis.windows.net"          = "privatelink.analysis.windows.net",
+      "privatelink.prod.powerquery.microsoft.com" = "privatelink.prod.powerquery.microsoft.com",
       "privatelink.azurewebsites.net"             = "privatelink.azurewebsites.net",
       "privatelink.queue.core.windows.net"        = "privatelink.queue.core.windows.net",
       "privatelink.table.core.windows.net"        = "privatelink.table.core.windows.net",

@@ -60,6 +60,10 @@ Following links are available:
 - `privatelink.database.windows.net`
 - `privatelink.openai.azure.com`
 - `privatelink.cognitiveservices.azure.com`
+- `privatelink.pbidedicated.windows.net`
+- `privatelink.analysis.windows.net`
+- `privatelink.prod.powerquery.microsoft.com`
+
 
 ### Service Suffix
 
