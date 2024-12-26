@@ -38,6 +38,9 @@ locals {
 
     }
     public = {
+      "privatelink.pbidedicated.windows.net"      = "privatelink.pbidedicated.windows.net",
+      "privatelink.analysis.windows.net"          = "privatelink.analysis.windows.net",
+      "privatelink.prod.powerquery.microsoft.com" = "privatelink.prod.powerquery.microsoft.com",
       "privatelink.azurewebsites.net"             = "privatelink.azurewebsites.net",
       "privatelink.queue.core.windows.net"        = "privatelink.queue.core.windows.net",
       "privatelink.table.core.windows.net"        = "privatelink.table.core.windows.net",
