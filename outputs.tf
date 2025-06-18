@@ -29,3 +29,7 @@ output "resource_manager_endpoint" {
 output "aml_studio_endpoint" {
   value = local.endpoints[var.arm_environment].aml_studio
 }
+
+output "ai_studio_endpoint" {
+  value = local.endpoints[var.arm_environment].ai_studio
+}
