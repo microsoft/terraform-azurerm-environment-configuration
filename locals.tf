@@ -94,13 +94,15 @@ locals {
       active_directory = "https://login.microsoftonline.us",
       microsoft_graph  = "https://graph.microsoft.us",
       resource_manager = "https://management.usgovcloudapi.net",
-      aml_studio       = "https://ml.azure.us"
+      aml_studio       = "https://ml.azure.us",
+      ai_studio        = "https://ai.azure.us"
     }
     public = {
       active_directory = "https://login.microsoftonline.com",
       microsoft_graph  = "https://graph.microsoft.com",
       resource_manager = "https://management.azure.com",
-      aml_studio       = "https://ml.azure.com"
+      aml_studio       = "https://ml.azure.com",
+      ai_studio        = "https://ai.azure.com"
     }
   }
 

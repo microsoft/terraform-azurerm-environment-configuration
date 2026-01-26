@@ -91,6 +91,7 @@ The following endpoints are available:
 - microsoft_graph_endpoint - public cloud example: `https://graph.microsoft.com`
 - resource_manager_endpoint - public cloud example: `https://management.azure.com`
 - aml_studio_endpoint - Azure Machine Learning Studio Endpoint. public cloud example: `https://ml.azure.com`
+- ai_studio_endpoint - Azure AI Studio Endpoint. public cloud example: `https://ai.azure.com`
 
 ## Contributing
 
