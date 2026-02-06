@@ -15,14 +15,15 @@ module "azurerm_environment_configuration" {
 
 `arm_environment` - stands for [terraform environment](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs#environment). Supported values are: `public` and `usgovernment`.
 
-### Privatelink
-To get privatelink, use as in following example:
+### Private Link FQDN
+
+To get the private link FQDN appropriate for the environment, use as in following example:
 
 ```terraform
 module.azurerm_environment_configuration.private_links["privatelink.monitor.azure.com"]
 ```
 
-Note: provide the public private link as an input. Based on the environment the module will return the privatelink in your environment.
+Note: provide the public cloud's private link FQDN as an input. Based on the environment, the module will return the private link FQDN in your environment.
 
 Following links are available:
 
@@ -63,7 +64,6 @@ Following links are available:
 - `privatelink.pbidedicated.windows.net` This link is supported only in public regions.
 - `privatelink.analysis.windows.net` This link is supported only in public regions.
 - `privatelink.prod.powerquery.microsoft.com` This link is supported only in public regions.
-
 
 ### Service Suffix
 
@@ -118,6 +118,7 @@ The documentation includes:
 - Environment-specific guidelines (Public, US Government, China, Germany)
 
 If you cannot find a specific private endpoint link in this repository, consult the documentation for the latest details.
+
 ## Trademarks
 
 This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
