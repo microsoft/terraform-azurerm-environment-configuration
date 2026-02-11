@@ -34,7 +34,9 @@ locals {
       "privatelink.batch.azure.com"               = "privatelink.batch.usgovcloudapi.net",
       "privatelink.database.windows.net"          = "privatelink.database.usgovcloudapi.net"
       "privatelink.openai.azure.com"              = "privatelink.openai.azure.us",
-      "privatelink.cognitiveservices.azure.com"   = "privatelink.cognitiveservices.azure.us"
+      "privatelink.cognitiveservices.azure.com"   = "privatelink.cognitiveservices.azure.us",
+      "privatelink.search.windows.net"            = "privatelink.search.azure.us",
+      "privatelink.services.ai.azure.com"         = "privatelink.services.ai.azure.us"
 
     }
     public = {
@@ -74,7 +76,9 @@ locals {
       "privatelink.batch.azure.com"               = "privatelink.batch.azure.com",
       "privatelink.database.windows.net"          = "privatelink.database.windows.net"
       "privatelink.openai.azure.com"              = "privatelink.openai.azure.com",
-      "privatelink.cognitiveservices.azure.com"   = "privatelink.cognitiveservices.azure.com"
+      "privatelink.cognitiveservices.azure.com"   = "privatelink.cognitiveservices.azure.com",
+      "privatelink.search.windows.net"            = "privatelink.search.windows.net",
+      "privatelink.services.ai.azure.com"         = "privatelink.services.ai.azure.com"
     }
   }
   suffixes = {
