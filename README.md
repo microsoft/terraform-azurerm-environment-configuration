@@ -61,6 +61,8 @@ Following links are available:
 - `privatelink.database.windows.net`
 - `privatelink.openai.azure.com`
 - `privatelink.cognitiveservices.azure.com`
+- `privatelink.search.windows.net`
+- `privatelink.services.ai.azure.com`
 - `privatelink.pbidedicated.windows.net` This link is supported only in public regions.
 - `privatelink.analysis.windows.net` This link is supported only in public regions.
 - `privatelink.prod.powerquery.microsoft.com` This link is supported only in public regions.
