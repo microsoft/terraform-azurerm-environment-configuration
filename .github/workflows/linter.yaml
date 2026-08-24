@@ -19,11 +19,9 @@ on:  # yamllint disable-line rule:truthy
     branches: [master, main]
 
 ##############################################
-# Least-privilege permissions for the linter #
+# No permissions by default, granted per job #
 ##############################################
-permissions:
-  contents: read
-  statuses: write
+permissions: {}
 
 # for each ref (branch/pr) run just the most recent,
 # cancel other pending/running ones
@@ -40,6 +38,10 @@ jobs:
     name: Lint Code Base
     # Set the agent to run on
     runs-on: ubuntu-latest
+    # Least-privilege permissions for the linter
+    permissions:
+      contents: read
+      statuses: write
 
     ##################
     # Load all steps #
